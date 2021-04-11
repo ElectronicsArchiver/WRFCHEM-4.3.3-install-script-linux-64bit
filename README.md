@@ -22,9 +22,9 @@ Tested in Ubuntu 20.04 LTS
 
 Built in 64-bit system 
 
-Tested with current available libraries on 03/15/2021
+Tested with current available libraries on 04/11/2021
 
 If newer libraries exist edit script paths for changes
 
 # Estimated Run Time ~ 80 - 120 Minutes
-### Special thanks to  Youtube's meteoadriatic and GitHub user jamal919
+### Special thanks to  Youtube's meteoadriatic, GitHub user jamal919, University of Manchester Doug L, GSL Jordan S.
