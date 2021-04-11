@@ -8,7 +8,7 @@
 # If newer libraries exist edit script paths for changes
 #Estimated Run Time ~ 80 - 120 Minutes
 #Special thanks to  Youtube's meteoadriatic and GitHub user jamal919
-
+#University of Manchester Doug L, GSL Jordan S.
 #############################basic package managment############################
 sudo apt update                                                                                                   
 sudo apt upgrade                                                                                                    
