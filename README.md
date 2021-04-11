@@ -1,5 +1,5 @@
 # WRFCHEM-4.2.2-install-script-linux-64bit
-This is a script that installs all the libararies, software, programs, and geostatic data to run the Weather Research Forecast Model (WRFCHEM-4.2.2) with the option KPP installed. Script assumes a clean directory with no other WRF configure files in the directory.
+This is a script that installs all the libraries, software, programs, and geostatic data to run the Weather Research Forecast Model (WRFCHEM-4.2.2) in 64bit with KPP installed. Please share and comment. Script assumes a clean directory with no other WRF configure files in the directory.
 
 # Installation 
 (Make sure to download folder into your Home Directory):
