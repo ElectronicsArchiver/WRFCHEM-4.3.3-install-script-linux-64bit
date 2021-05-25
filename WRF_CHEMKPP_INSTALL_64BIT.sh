@@ -4,7 +4,7 @@
 # Download and install required library and data files for WRFCHEM/KPP.
 # Tested in Ubuntu 20.04 LTS
 # Built in 64-bit system
-# Tested with current available libraries on 03/15/2021
+# Tested with current available libraries on 05/25/2021
 # If newer libraries exist edit script paths for changes
 #Estimated Run Time ~ 80 - 120 Minutes
 #Special thanks to  Youtube's meteoadriatic and GitHub user jamal919
@@ -212,8 +212,8 @@ export PATH=$HOME/WRFCHEM/GrADS/Contents:$PATH
 
 
 
-############################ WRFCHEM 4.2.2 #################################
-## WRF v4.2.2
+############################ WRFCHEM 4.3 #################################
+## WRF v4.3
 ## Downloaded from git tagged releases
 # option 34, option 1 for gfortran and distributed memory w/basic nesting
 # If the script comes back asking to locate a file (libfl.a)
@@ -233,8 +233,8 @@ export WRF_KPP=1
 export YACC='/usr/bin/yacc -d' 
 export FLEX=/usr/bin/flex
 export FLEX_LIB_DIR=/usr/lib/x86_64-linux-gnu/ 
-export KPP_HOME=$HOME/WRFCHEM/WRF-4.2.2/chem/KPP/kpp/kpp-2.1
-export WRF_SRC_ROOT_DIR=$HOME/WRFCHEM/WRF-4.2.2
+export KPP_HOME=$HOME/WRFCHEM/WRF-4.3/chem/KPP/kpp/kpp-2.1
+export WRF_SRC_ROOT_DIR=$HOME/WRFCHEM/WRF-4.3
 export PATH=$KPP_HOME/bin:$PATH
 export SED=/usr/bin/sed
 export WRFIO_NCD_LARGE_FILE_SUPPORT=1
@@ -242,9 +242,9 @@ export WRFIO_NCD_LARGE_FILE_SUPPORT=1
 #Downloading WRF code
 
 cd $HOME/WRFCHEM/Downloads
-wget -c https://github.com/wrf-model/WRF/archive/v4.2.2.tar.gz
-tar -xvzf v4.2.2.tar.gz -C $HOME/WRFCHEM
-cd $HOME/WRFCHEM/WRF-4.2.2
+wget -c https://github.com/wrf-model/WRF/archive/v4.3.tar.gz
+tar -xvzf v4.3.tar.gz -C $HOME/WRFCHEM
+cd $HOME/WRFCHEM/WRF-4.3
 
 cd chem/KPP
 sed -i -e 's/="-O"/="-O0"/' configure_kpp
@@ -252,19 +252,19 @@ cd -
 
 ./configure # option 34, option 1 for gfortran and distributed memory w/basic nesting
 ./compile em_real 
-export WRF_DIR=$HOME/WRFCHEM/WRF-4.2.2
+export WRF_DIR=$HOME/WRFCHEM/WRF-4.3
 
 
 
-############################WPSV4.2#####################################
-## WPS v4.2
+############################WPSV4.3#####################################
+## WPS v4.3
 ## Downloaded from git tagged releases
 #Option 3 for gfortran and distributed memory 
 ########################################################################
 cd $HOME/WRFCHEM/Downloads
-wget -c https://github.com/wrf-model/WPS/archive/v4.2.tar.gz
-tar -xvzf v4.2.tar.gz -C $HOME/WRFCHEM
-cd $HOME/WRFCHEM/WPS-4.2
+wget -c https://github.com/wrf-model/WPS/archive/v4.3.tar.gz
+tar -xvzf v4.3.tar.gz -C $HOME/WRFCHEM
+cd $HOME/WRFCHEM/WPS-4.3
 ./configure 
 ./compile
 
@@ -319,5 +319,5 @@ echo "export LD_LIBRARY_PATH=$DIR/lib:$LD_LIBRARY_PATH" >> ~/.bashrc
 
 
 #####################################BASH Script Finished##############################
-echo "Congratulations! You've successfully installed all required files to run the Weather Research Forecast Model Chemistry verison 4.2.2."
+echo "Congratulations! You've successfully installed all required files to run the Weather Research Forecast Model Chemistry verison 4.3."
 echo "Thank you for using this script" 
