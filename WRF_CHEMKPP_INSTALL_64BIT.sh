@@ -261,11 +261,13 @@ export WRF_DIR=$HOME/WRFCHEM/WRF-4.3
 ## Downloaded from git tagged releases
 #Option 3 for gfortran and distributed memory 
 ########################################################################
-cd $HOME/WRFCHEM/Downloads
+
+cd $HOME/WRF/Downloads
 wget -c https://github.com/wrf-model/WPS/archive/v4.3.tar.gz
-tar -xvzf v4.3.tar.gz -C $HOME/WRFCHEM
-cd $HOME/WRFCHEM/WPS-4.3
-./configure 
+mkdir $HOME/WRF/WPS-4.3
+tar -xvzf v4.3.tar.gz -C $HOME/WRF/WPS-4.3
+cd $HOME/WRF/WPS-4.3
+./configure #Option 3 for gfortran and distributed memory 
 ./compile
 
 
