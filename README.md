@@ -15,6 +15,7 @@ I have provided comments on what the script is doing and information on configur
 
 
 # WRF installation with parallel process.
+## Must be installed with GNU compiler, it will not work with other compilers.
 
 Download and install required library and data files for WRF.
 
@@ -22,7 +23,7 @@ Tested in Ubuntu 20.04 LTS
 
 Built in 64-bit system 
 
-Tested with current available libraries on 04/11/2021
+Tested with current available libraries on 05/25/2021
 
 If newer libraries exist edit script paths for changes
 
