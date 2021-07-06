@@ -255,17 +255,20 @@ cd -
 ./compile em_real 
 export WRF_DIR=$HOME/WRFCHEM/WRF-4.3
 
-
-############################WPSV4.2#####################################
-## WPS v4.2
+############################WPSV4.3#####################################
+## WPS v4.3
 ## Downloaded from git tagged releases
+#Option 3 for gfortran and distributed memory 
 ########################################################################
-cd $HOME/WRFCHEM/Downloads
-wget -c https://github.com/wrf-model/WPS/archive/v4.2.tar.gz
-tar -xvzf v4.2.tar.gz -C $HOME/WRF
-cd $HOME/WRFCHEM/WPS-4.2
+
+cd $HOME/WRF/Downloads
+wget -c https://github.com/wrf-model/WPS/archive/v4.3.tar.gz
+mv v4.3.tar.gz WPS-4.3.tar.gz
+tar -xvzf WPS-4.3.tar.gz -C $HOME/WRF
+cd $HOME/WRF/WPS-4.3
 ./configure #Option 3 for gfortran and distributed memory 
 ./compile
+
 
 
 
