@@ -243,7 +243,8 @@ export WRFIO_NCD_LARGE_FILE_SUPPORT=1
 
 cd $HOME/WRFCHEM/Downloads
 wget -c https://github.com/wrf-model/WRF/archive/v4.3.tar.gz
-tar -xvzf v4.3.tar.gz -C $HOME/WRFCHEM
+mv v4.3.tar.gz WRF-4.3.tar.gz
+tar -xvzf WRF-4.3.tar.gz -C $HOME/WRFCHEM
 cd $HOME/WRFCHEM/WRF-4.3
 
 cd chem/KPP
