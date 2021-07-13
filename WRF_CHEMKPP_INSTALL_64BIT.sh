@@ -242,8 +242,7 @@ export WRFIO_NCD_LARGE_FILE_SUPPORT=1
 #Downloading WRF code
 
 cd $HOME/WRFCHEM/Downloads
-wget -c https://github.com/wrf-model/WRF/archive/v4.3.tar.gz
-mv v4.3.tar.gz WRF-4.3.tar.gz
+wget -c https://github.com/wrf-model/WRF/archive/v4.3.tar.gz -O WRF-4.3.tar.gz
 tar -xvzf WRF-4.3.tar.gz -C $HOME/WRFCHEM
 cd $HOME/WRFCHEM/WRF-4.3
 
@@ -262,8 +261,7 @@ export WRF_DIR=$HOME/WRFCHEM/WRF-4.3
 ########################################################################
 
 cd $HOME/WRF/Downloads
-wget -c https://github.com/wrf-model/WPS/archive/v4.3.tar.gz
-mv v4.3.tar.gz WPS-4.3.tar.gz
+wget -c https://github.com/wrf-model/WPS/archive/v4.3.tar.gz -O WPS-4.3.tar.gz
 tar -xvzf WPS-4.3.tar.gz -C $HOME/WRF
 cd $HOME/WRF/WPS-4.3
 ./configure #Option 3 for gfortran and distributed memory 
