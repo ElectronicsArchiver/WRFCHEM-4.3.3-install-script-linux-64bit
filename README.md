@@ -4,11 +4,11 @@ This is a script that installs all the libraries, software, programs, and geosta
 # Installation 
 (Make sure to download folder into your Home Directory):
 
-git clone https://github.com/whatheway/WRFCHEM-4.3-install-script-linux-64bit.git
+> git clone https://github.com/whatheway/WRFCHEM-4.3-install-script-linux-64bit.git
 
-chmod +x WRF_CHEMKPP_INSTALL_64BIT.sh
+> chmod +x WRF_CHEMKPP_INSTALL_64BIT.sh
 
-./WRF_CHEMKPP_INSTALL_64BIT.sh
+> ./WRF_CHEMKPP_INSTALL_64BIT.sh
 
 # Please make sure to read the WRF_ARW_INSTALL.sh script before installing.  
 I have provided comments on what the script is doing and information on configuration files.
