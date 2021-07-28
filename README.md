@@ -8,6 +8,10 @@ This is a script that installs all the libraries, software, programs, and geosta
 
 > chmod +x WRF_CHEMKPP_INSTALL_64BIT.sh
 
+> chmod +x MET_self_install_script_Linux_84bit.sh
+
+> chmod +x METplus_self_install_script_Linux_32bit.sh
+
 > ./WRF_CHEMKPP_INSTALL_64BIT.sh
 
 # Please make sure to read the WRF_ARW_INSTALL.sh script before installing.  
