@@ -287,6 +287,13 @@ mkdir $HOME/WRFCHEM/WRFPortal
 unzip wrf-portal.zip -d $HOME/WRFCHEM/WRFPortal
 chmod +x $HOME/WRFCHEM/WRFPortal/runWRFPortal
 
+######################## DTC's MET & METplus ###########################
+## See script for details
+
+cd
+$HOME/MET_self_install_script_Linux_64bit.sh
+
+
 ######################## Static Geography Data inc/ Optional ####################
 # http://www2.mmm.ucar.edu/wrf/users/download/get_sources_wps_geog.html
 # Double check if Irrigation.tar.gz extracted into WPS_GEOG folder
@@ -317,8 +324,6 @@ tar -xvf lake_depth.tar.bz2 -C $HOME/WRFCHEM/GEOG/WPS_GEOG
 echo "export PATH=$DIR/bin:$PATH" >> ~/.bashrc
 echo "export LD_LIBRARY_PATH=$DIR/lib:$LD_LIBRARY_PATH" >> ~/.bashrc
 
-cd
-$HOME/MET_self_install_script_Linux_64bit.sh
 
 
 #####################################BASH Script Finished##############################
