@@ -290,8 +290,7 @@ chmod +x $HOME/WRFCHEM/WRFPortal/runWRFPortal
 ######################## DTC's MET & METplus ###########################
 ## See script for details
 
-cd
-$HOME/MET_self_install_script_Linux_64bit.sh
+$HOME/WRFCHEM-4.3-install-script-linux-64bit/MET_self_install_script_Linux_64bit.sh
 
 
 ######################## Static Geography Data inc/ Optional ####################
