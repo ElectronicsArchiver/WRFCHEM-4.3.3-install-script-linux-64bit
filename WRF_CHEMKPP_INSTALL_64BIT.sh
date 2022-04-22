@@ -92,7 +92,7 @@ export HDF5=$DIR/grib2
 export LD_LIBRARY_PATH=$DIR/grib2/lib:$LD_LIBRARY_PATH
 
 ##############################Install NETCDF C Library############################
-cd $HOME/WRF/Downloads
+cd $HOME/WRFCHEM/Downloads
 tar -xzvf v.4.7.4.tar.gz
 cd netcdf-c-4.7.4/
 export CPPFLAGS=-I$DIR/grib2/include 
@@ -105,7 +105,7 @@ export PATH=$DIR/NETCDF/bin:$PATH
 export NETCDF=$DIR/NETCDF
 
 ##############################NetCDF fortran library############################
-cd $HOME/WRF/Downloads
+cd $HOME/WRFCHEM/Downloads
 tar -xvzf v4.5.3.tar.gz
 cd netcdf-fortran-4.5.3/
 export LD_LIBRARY_PATH=$DIR/NETCDF/lib:$LD_LIBRARY_PATH
