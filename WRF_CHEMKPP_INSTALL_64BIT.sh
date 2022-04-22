@@ -92,8 +92,8 @@ export HDF5=$DIR/grib2
 export LD_LIBRARY_PATH=$DIR/grib2/lib:$LD_LIBRARY_PATH
 
 ##############################Install NETCDF C Library############################
-cd $HOME/WRFCHEM/Downloads
-tar -xzvf netcdf-c-4.7.4.tar.gz
+cd $HOME/WRF/Downloads
+tar -xzvf v.4.7.4.tar.gz
 cd netcdf-c-4.7.4/
 export CPPFLAGS=-I$DIR/grib2/include 
 export LDFLAGS=-L$DIR/grib2/lib
@@ -105,8 +105,8 @@ export PATH=$DIR/NETCDF/bin:$PATH
 export NETCDF=$DIR/NETCDF
 
 ##############################NetCDF fortran library############################
-cd $HOME/WRFCHEM/Downloads
-tar -xvzf netcdf-fortran-4.5.3.tar.gz
+cd $HOME/WRF/Downloads
+tar -xvzf v4.5.3.tar.gz
 cd netcdf-fortran-4.5.3/
 export LD_LIBRARY_PATH=$DIR/NETCDF/lib:$LD_LIBRARY_PATH
 export CPPFLAGS=-I$DIR/NETCDF/include 
@@ -114,6 +114,7 @@ export LDFLAGS=-L$DIR/NETCDF/lib
 ./configure --prefix=$DIR/NETCDF --disable-shared
 make 
 make install
+
 
 ##############################MPICH############################
 cd $HOME/WRFCHEM/Downloads
