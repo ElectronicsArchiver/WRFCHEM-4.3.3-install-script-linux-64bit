@@ -10,7 +10,7 @@ This is a script that installs all the libraries, software, programs, and geosta
 
 > chmod +x MET_self_install_script_Linux_64bit.sh
 
-> chmod +x METplus_self_install_script_Linux_32bit.sh
+> chmod +x METplus_self_install_script_Linux_64bit.sh
 
 > ./WRF_CHEMKPP_INSTALL_64BIT.sh
 
