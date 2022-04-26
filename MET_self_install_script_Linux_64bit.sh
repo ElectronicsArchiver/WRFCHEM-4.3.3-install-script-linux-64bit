@@ -24,9 +24,9 @@ wget https://raw.githubusercontent.com/dtcenter/MET/develop/scripts/installation
 wget https://dtcenter.ucar.edu/dfiles/code/METplus/MET/installation/tar_files.tgz
 wget https://github.com/dtcenter/MET/releases/download/v10.1.1/met-10.1.1.20220419.tar.gz 
 
-cp compile_MET_all.sh $HOME/WRF/MET-10.1.1
-tar -xvzf tar_files.tgz -C $HOME/WRF/MET-10.1.1
-cp met-10.1.1.20220419.tar.gz $HOME/WRF/MET-10.1.1/tar_files
+cp compile_MET_all.sh $HOME/WRFCHEM/MET-10.1.1
+tar -xvzf tar_files.tgz -C $HOME/WRFCHEM/MET-10.1.1
+cp met-10.1.1.20220419.tar.gz $HOME/WRFCHEM/MET-10.1.1/tar_files
 cd $HOME/WRFCHEM/MET-10.1.1
 
 
@@ -39,7 +39,7 @@ export FC=/usr/bin/gfortran
 export F77=/usr/bin/gfortran
 export F90=/usr/bin/gfortran
 export gcc_version=$(gcc -dumpfullversion)
-export TEST_BASE=$HOME/WRF/MET-10.0.0                       
+export TEST_BASE=$HOME/WRFCHEM/MET-10.0.0                       
 export COMPILER=gnu_$gcc_version                 
 export MET_SUBDIR=${TEST_BASE}                   
 export MET_TARBALL=met-10.0.0.20210510.tar.gz    
