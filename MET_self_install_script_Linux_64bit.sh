@@ -5,8 +5,6 @@ export HOME=`cd;pwd`
 
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get update
-sudo apt-get upgrade
 sudo apt-get install python-dev python3-dev emacs flex bison libpixman-1-dev libjpeg-dev pkg-config libpng-dev unzip python3.8 python3.8-dev python3-pip pipenv gcc gfortran g++ libtool automake autoconf make m4 default-jre default-jdk csh ksh git ncview ncl-ncarg libncurses5 libncurses6 mlocate
 
 
