@@ -11,7 +11,6 @@ sudo apt-get install python-dev python3-dev emacs flex bison libpixman-1-dev lib
 
 
 #Directory Listings
-mkdir $HOME/WRFCHEM
 mkdir $HOME/WRFCHEM/MET-10.1.1
 mkdir $HOME/WRFCHEM/MET-10.1.1/Downloads
 mkdir $HOME/WRFCHEM/METplus-4.1.1
